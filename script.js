@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     const cells = document.querySelectorAll('.cell');
     const restartButton = document.getElementById('restartButton');
