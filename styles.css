@@ -1,0 +1,96 @@
+body {
+    font-family: 'Bangers', cursive;
+    background: linear-gradient(45deg, #8e44ad, #3498db, #e74c3c);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.cell:hover {
+    transform: scale(1.1);
+}
+
+.info {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #27ae60;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2ecc71;
+}
+
+#message {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.player-select {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-option {
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+.player-label {
+    margin-left: 5px;
+}
